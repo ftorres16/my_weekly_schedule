@@ -45,6 +45,12 @@ class Event(BaseModel):
             return v.split("-")[1].strip()
         return v
 
+    @validator("end")
+    def ends_after_start(cls, v, values, **kwargs):
+        if "start" in values and values["start"] >= v:
+            raise ValueError("Event must end after it starts")
+        return v
+
     @validator("color", pre=True)
     def strip_whitespace(cls, v):
         if isinstance(v, str):
