@@ -1,0 +1,24 @@
+Task 1
+Tue
+12:00 - 15:00
+lightgreen
+
+Task 2
+Thu
+11:00 - 12:00
+lightgreen
+
+Task 3
+Wed
+16:00 - 16:30
+lightgreen
+
+Task 4
+Fri
+09:00 - 12:00
+lightgreen
+
+Task 5
+Fri
+14:00 - 16:00
+lightgreen
