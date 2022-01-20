@@ -9,6 +9,7 @@ from my_weekly_schedule.plot_schedule import plot_events
 app = typer.Typer()
 
 
+@app.callback()
 def main(
     input_: Path,
     show: bool = True,
@@ -38,4 +39,4 @@ def main(
 
 
 if __name__ == "__main__":
-    typer.run(main)
+    app()

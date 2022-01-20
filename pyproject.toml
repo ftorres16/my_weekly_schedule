@@ -1,9 +1,14 @@
 [tool.poetry]
 name = "my_weekly_schedule"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "A tool for plotting your weekly schedule."
 authors = ["Fabian Torres"]
 license = "GPLv3"
+readme = "README.md"
+repository = "https://github.com/ftorres16/my_weekly_schedule"
+
+[tool.poetry.scripts]
+my_weekly_schedule = 'my_weekly_schedule.main:app'
 
 [tool.poetry.dependencies]
 python = "^3.9"
