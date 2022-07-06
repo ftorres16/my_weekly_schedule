@@ -9,7 +9,7 @@ from my_weekly_schedule.plot_schedule import plot_events
 app = typer.Typer()
 
 
-@app.callback()
+@app.command()
 def main(
     input_: Path,
     show: bool = True,
